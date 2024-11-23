@@ -4,7 +4,6 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
 # Crear las instancias de los navegadores manualmente
-#firefox = webdriver.Firefox()
 chrome = webdriver.Chrome()
 
 chrome.get("https://demoqa.com/text-box")

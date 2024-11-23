@@ -15,7 +15,7 @@ extraccion_xpath.send_keys("Holas")
 chrome.find_element(By.CSS_SELECTOR, "#userEmail").send_keys("pruebas@mail.com")
 chrome.find_element(By.CSS_SELECTOR, "#currentAddress").send_keys(f"Dejka de hacer eso xD pichi cacas")
 chrome.find_element(By.CSS_SELECTOR, "#permanentAddress").send_keys("Pues sin novedades")
-chrome.execute_script("window.scrollTo(0,500)")
+chrome.execute_script("window.scrollTo(0,500)") #funcion de js para que se desplace la pagina
 time.sleep(1)
 chrome.find_element(By.CSS_SELECTOR, "#submit").click()
 

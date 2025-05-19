@@ -10,7 +10,7 @@ chrome.maximize_window()
 chrome.implicitly_wait(10)
 tiempo = 2
 
-variable_selector = chrome.find_element(By.XPATH, "//select[@id='comboBox1']")
+variable_selector = chrome.find_element(By.ID, "comboBox1")
 #Se ocupa vs porque no se como nombrar esta variable, es una referencia a la de arriba
 vs = Select(variable_selector)
 

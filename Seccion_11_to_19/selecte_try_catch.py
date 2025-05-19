@@ -10,14 +10,14 @@ from selenium.webdriver.support import expected_conditions as EC
 chrome = webdriver.Chrome()
 chrome.get("https://validaciones.rodrigovillanueva.com.mx/ComboBox_ok.html")
 chrome.maximize_window()
-tiempo = 0.1
+tiempo = 0.5
 
 try:
     variable_selector = WebDriverWait(chrome, 5).until(EC.visibility_of_element_located((By.XPATH, "//select["
                                                                                                    "@id='comboBox1']")))
     #variable_selector = chrome.find_element(By.XPATH, "//select[@id='comboBox1']")
 
-    #Se ocupa vs porque no se como nombrar esta variable, es una referencia a la de arriba
+    #Se ocupa vs. porque no se como nombrar esta variable, es una referencia a la de arriba
     vs = Select(variable_selector)
 
     vs.select_by_index(4)

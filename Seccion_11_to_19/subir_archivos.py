@@ -15,9 +15,7 @@ tiempo = 3
 try:
     subir_imagen = WebDriverWait(chrome, 5).until(EC.visibility_of_element_located((By.XPATH, "//input["
                                                                                               "@id='uploadFile']")))
-    subir_imagen = chrome.find_element(By.XPATH, "//input[@id='uploadFile']")
-    subir_imagen.send_keys("/home/frodinsky/Documents/Selenium_Python_Test_Qa "
-                           "Automation/pythonProject/Seccion_11_to_19/imagen/Subida_exitosa.jpeg")
+    subir_imagen.send_keys("/home/frodinsky/Imágenes/forge_shortcuts_es.png")
     time.sleep(tiempo)
 
 except TimeoutException as ex:

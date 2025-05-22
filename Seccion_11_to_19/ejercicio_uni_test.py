@@ -12,12 +12,19 @@ class BaseTest(unittest.TestCase):
         self.driver.maximize_window()
 
     def test1(self):
-        self.driver.get("https://validaciones.rodrigovillanueva.com.mx/Campos_Uno_OK.html")
+        self.driver.get("https://www.saucedemo.com/")
+        self.driver.find_element(By.ID,"user-name").send_keys("standard_user")
+        self.driver.find_element(By.ID, "password").send_keys("secret_sauce")
+        self.driver.find_element(By.ID, "login-button").click()
+
 
     def tearDown(self):  # ✅ Se ejecuta al final del test
-        self.driver.quit()
         time.sleep(t)
+        self.driver.quit()
 
-# ✅ Esto debe ir fuera de la clase
+
+
+
+
 if __name__ == '__main__':
     unittest.main()

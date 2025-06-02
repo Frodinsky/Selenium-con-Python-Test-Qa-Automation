@@ -11,7 +11,7 @@ class BaseTest(unittest.TestCase):
         self.POM_Funciones = LoginPage(self.driver)
 
 
-    def test1(self):
+    def test(self):
         self.POM_Funciones.login("standard_user", "secret_sauce")
         self.assertTrue(self.POM_Funciones.is_login_successful())
         time.sleep(5)
